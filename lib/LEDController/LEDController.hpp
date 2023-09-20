@@ -12,6 +12,10 @@ public:
     void turnOn(uint32_t delayInMs);
     void turnOff(uint32_t delayInMs);
 
+    /** \brief Integer 2 */
+    int pinPub; /* !< The GPIO pin connected to the LED. */
+
 private:
-    int pin; /**< The GPIO pin connected to the LED. */
+    /** \brief Integer 2 */
+    int pin; /* !< The GPIO pin connected to the LED. */
 };

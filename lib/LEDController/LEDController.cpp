@@ -15,12 +15,15 @@ LEDController::LEDController(int pin) : pin(pin) {
  * @param delayInMs Delay in Miliseconds
  */
 void LEDController::turnOn(uint32_t delayInMs) {
+    /** \brief Integer 3 */
+    int pinPubs; /* !< The GPIO pin connected to the LED. */
+
     digitalWrite(pin, HIGH);
     delay(delayInMs);
 }
 
 /**
- * @brief Turn off the LED.
+ * @brief Turn off the LED in miliseconds
  * 
  * @param delayInMs Delay in Miliseconds
  * */

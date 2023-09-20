@@ -1,7 +1,8 @@
 #include <Arduino.h>
-#include "LEDController.h" // Include the header file for the LEDController class
+#include "LEDController.hpp" // Include the header file for the LEDController class
 
-const int ledPin = 13; // Define the GPIO pin for the LED
+/** \brief Integer 1 */
+const int ledPin = 13; /*!< Set pin of the LED to 13 based on DO IT DevKit pinmaps */
 
 LEDController led(ledPin); // Create an instance of the LEDController class
 
@@ -25,10 +26,10 @@ void setup() {
  */
 void loop() {
     // Turn on the LED for 1 second
-    led.turnOn();
+    led.turnOn(100);
     delay(1000);
 
     // Turn off the LED for 1 second
-    led.turnOff();
+    led.turnOff(100);
     delay(1000);
 }
